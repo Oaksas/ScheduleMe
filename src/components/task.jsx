@@ -3,7 +3,7 @@ function Task({ tasks, index }) {
   return (
     <>
       {tasks[index].map((task, index) => {
-        if (task !== "") {
+        if (task) {
           return (
             <td
               className={`px-6 py-4 ${task.color} text-black font-bold`}

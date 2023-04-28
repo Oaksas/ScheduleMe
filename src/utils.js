@@ -16,30 +16,8 @@ export const colors = [
   "bg-indigo-300",
   "bg-fuchsia-200",
 ];
-export const timer = [9, 10, 11, 12, 1, 2, 3];
 
 export function checkAvailability(allTasks, startTime, index, location) {
   return allTasks[Number(startTime) + index][locations.indexOf(location)]
     .occupied;
 }
-// export function timeMapper(startTime) {
-//   startTime = Number(startTime);
-//   switch (startTime) {
-//     case 9:
-//       return 0;
-//     case 10:
-//       return 1;
-//     case 11:
-//       return 2;
-//     case 12:
-//       return 3;
-//     case 1:
-//       return 4;
-//     case 2:
-//       return 5;
-//     case 3:
-//       return 6;
-//     default:
-//       return 6;
-//   }
-// }

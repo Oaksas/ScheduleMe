@@ -19,7 +19,7 @@ function Book(props) {
       return;
     }
     if (endTime !== startTime) {
-      var cellColor = colors[Math.floor(Math.random() * colors.length)];
+      let cellColor = colors[Math.floor(Math.random() * colors.length)];
 
       for (let index = 0; index < Math.abs(endTime - startTime) + 1; index++) {
         let allTasks = [...tasks];
